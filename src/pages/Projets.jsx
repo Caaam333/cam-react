@@ -2,7 +2,8 @@ import React from 'react';
 
 const Projets = () => {
   return (
-    <div>
+    <div id="projets">
+      <h1>PROJECTS</h1>
       <div className="candiloc">
         <div>
           {/* <a href="https://candiloc.herokuapp.com/" target="_blank"><img "CANDILOC.png" /></a> */}

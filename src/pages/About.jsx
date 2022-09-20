@@ -1,10 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar";
-import photo from "../assets/images/my_face.jpg";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       {/* <NavBar /> */}
       <h1>A PROPOS</h1>
       <br />

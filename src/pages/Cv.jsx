@@ -4,10 +4,8 @@ import NavBar from '../components/NavBar';
 
 const Cv = () => {
   return (
-    <div>
-      <NavBar />
+    <div id="cv">
       <h1>CV</h1>
-      <Footer />
     </div>
   );
 };
