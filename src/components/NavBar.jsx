@@ -34,14 +34,14 @@ const NavBar = () => {
           <img src="./menu.png" className="menu" />
         )}
       </div>
-      <ul className={toggle ? "nav-menu" : "nav-menu d-none"}>
+      <ul className={toggle ? "nav-menu" : "nav-menu display-none"}>
         <li className="nav-item">
           <Link
             to="header"
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={300}
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             ACCUEIL
@@ -52,8 +52,8 @@ const NavBar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-50}
-            duration={500}
+            offset={-70}
+            duration={300}
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             A PROPOS
@@ -64,8 +64,8 @@ const NavBar = () => {
             to="projets"
             spy={true}
             smooth={true}
-            offset={-50}
-            duration={500}
+            offset={-70}
+            duration={300}
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             PROJETS
@@ -76,8 +76,8 @@ const NavBar = () => {
             to="cv"
             spy={true}
             smooth={true}
-            offset={-50}
-            duration={500}
+            offset={-70}
+            duration={300}
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             CV
@@ -88,8 +88,8 @@ const NavBar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-50}
-            duration={500}
+            offset={-70}
+            duration={300}
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             CONTACT
