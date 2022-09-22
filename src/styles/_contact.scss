@@ -2,5 +2,23 @@
   img {
     width: 30px;
     height: auto;
+    margin-bottom: 10px;
+    background-color: $color-2;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  li {
+    border: 1px solid $color-2;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

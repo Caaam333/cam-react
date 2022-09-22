@@ -3,6 +3,7 @@
 
   img {
     width: 300px;
+    height: auto;
     border-radius: 4px;
     object-fit: cover;
     max-height: 400px;
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: space-around;
     // flex-direction: column;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     // -webkit-columns: 200px 2;
     // -moz-columns: 200px 2;
     // columns: 200px 2;
@@ -31,7 +32,8 @@
       justify-content: center;
       align-items: center;
       max-width: 600px;
-      max-height: 400px;
+
+      // max-height: 400px;
       // flex-wrap: wrap;
       // height: 300px;
       // width: 300px;
@@ -43,7 +45,7 @@
       // columns: 200px 2;
 
       text-align: justify;
-      margin-bottom: 0;
+      margin-bottom: 25px;
       // column-count: 2;
       // column-width: 300px;
       // column-gap: 25px;
