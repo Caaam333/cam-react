@@ -8,10 +8,11 @@ const Cv = () => {
       <h1 className="h1">CV</h1>
       <Link
         to="/pdf/CV_Camille_LAGUERRE_2022_FR.pdf"
-        // className="link"
+        className="button visible"
         target="_blank"
+        rel="noopener"
       >
-        Téléchargez mon CV ↓
+        &gt;  Téléchargez mon CV  &lt;
       </Link>
     </Container>
   );

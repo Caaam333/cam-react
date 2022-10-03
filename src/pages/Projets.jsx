@@ -43,13 +43,11 @@ const Projets = () => {
                   <h4>Vous partez en vacances ? Eux aussi.</h4>
                 </div>
                 <p>
-                  {/* <u>OBJECTIF</u> */}
                   <img src="./objectif.png" className="picto" />
                   Réalisation d'une application qui calcule en temps réel le
                   nombre de place restante dans des pensions à une courte
                   distance d'un trajet en fonction du type d'animal.
                   <br />
-                  {/* <u>TEMPS</u> */}
                   <img src="./temps.png" className="picto" />3 semaines
                   <br />
                   Application web format mobile (390x844) réalisée en équipe

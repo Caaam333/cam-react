@@ -1,24 +1,106 @@
 #contact {
-  img {
-    width: 30px;
-    height: auto;
-    margin-bottom: 10px;
-    background-color: $color-2;
-  }
-
-  .contact-list {
+  .contact-logo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    
+    li {
+      border-radius: 10px;
+      padding: 0 10px;
+      padding-top: 10px;
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      max-width: 100px;
+      width: 20%;
+      height: auto;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      
+      &:hover {
+        background-color: $color-1;
+      }
+      
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      &:active {
+        // background-color: $color-1;
+        box-shadow: 0 5px $color-1;
+        transform: translateY(4px);
+      }
+    }
   }
 
-  li {
-    border: 1px solid $color-2;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .contact-element {
+    border: 5px solid white;
+    background-color: $color-4;
+    color: white;
+    height: 100px;
+    border-radius: 10px;
+    padding: 0;
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    
+    p {
+      margin-bottom: 0;
+      font-weight: 600
+    }
+
+    li {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      cursor: pointer;
+      
+      &.visible {
+        display: flex;
+      }
+      
+      a {
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: $color-4;
+        font-weight: bolder;
+
+        &:active {
+          // background-color: $color-1;
+          // box-shadow: 0 5px $color-1;
+          transform: translateY(4px);
+
+        }
+      }
+    }
+
+    .default-msg {
+      display: flex;
+      &.visible {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  #contact {
+    li {
+      width: 40%;
+    }
   }
 }

@@ -1,15 +1,11 @@
 import React, { Fragment } from "react";
 import { Link } from "react-scroll";
-// import { Link } from "react-router-dom";
 import { useState } from "react";
-// import Header from '../components/Header';
 
 const NavBar = () => {
-  // const [click, setClick] = useState(false);
   const [fix, setFix] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  // const handleClick = () => setClick(!click);
   const handleToggle = () => setToggle(!toggle);
 
   const setFixed = () => {
@@ -42,7 +38,7 @@ const NavBar = () => {
             smooth={true}
             offset={0}
             duration={300}
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            onClick={handleToggle}
           >
             ACCUEIL
           </Link>
@@ -54,9 +50,11 @@ const NavBar = () => {
             smooth={true}
             offset={-70}
             duration={300}
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            onClick={handleToggle}
           >
-            A PROPOS
+            {/* <p className={(nav) => (nav.isActive ? "nav-active" : "")}> */}
+              A PROPOS
+            {/* </p> */}
           </Link>
         </li>
         <li className="nav-item">
@@ -66,7 +64,7 @@ const NavBar = () => {
             smooth={true}
             offset={-70}
             duration={300}
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            onClick={handleToggle}
           >
             PROJETS
           </Link>
@@ -78,7 +76,7 @@ const NavBar = () => {
             smooth={true}
             offset={-70}
             duration={300}
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            onClick={handleToggle}
           >
             CV
           </Link>
@@ -90,7 +88,6 @@ const NavBar = () => {
             smooth={true}
             offset={-70}
             duration={300}
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             CONTACT
           </Link>
