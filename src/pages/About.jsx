@@ -20,7 +20,7 @@ const About = () => {
           passionne et me donne envie d'en apprendre encore plus. Je suis
           maintenant prête à acquérir une première expérience professionnelle.
         </p>
-        <img src="./PHOTO_1.jpg" className="img-fluid"/>
+        <img src="./assets/images/PHOTO_1.jpg" className="img-fluid"/>
       </div>
     </Container>
   );

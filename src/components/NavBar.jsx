@@ -22,12 +22,12 @@ const NavBar = () => {
 
   return (
     <nav className={fix ? "navbar fixed" : "navbar"}>
-      <img src="./LOGO-CAM.png" />
+      <img src="./assets/images/LOGO-CAM.png" />
       <div className="toggle-icon" onClick={handleToggle}>
         {toggle ? (
-          <img src="./croix.png" className="croix" />
+          <img src="./assets/images/croix.png" className="croix" />
         ) : (
-          <img src="./menu.png" className="menu" />
+          <img src="./assets/images/menu.png" className="menu" />
         )}
       </div>
       <ul className={toggle ? "nav-menu" : "nav-menu display-none"}>
