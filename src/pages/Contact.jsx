@@ -80,7 +80,7 @@ const Contact = () => {
         <li className={clickDin ? "button visible" : ""}>
           {clickDin && (
             <a href="https://www.linkedin.com/in/camille-lgrr/">
-              &gt; linkedin &lt;
+              &gt; Linkedin &lt;
             </a>
           )}
         </li>
