@@ -88,6 +88,7 @@ const NavBar = () => {
             smooth={true}
             offset={-70}
             duration={300}
+            onClick={handleToggle}
           >
             CONTACT
           </Link>
